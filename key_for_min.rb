@@ -4,7 +4,7 @@
 def key_for_min_value(name_hash)
   key_for_min_value do |name, value|
     value
-    if value == [-1]
+    if value < key_for_min_value
       puts name
     end
   end
